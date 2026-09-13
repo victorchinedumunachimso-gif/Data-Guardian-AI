@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | Data Guardian AI</title>
+
+
+    <!-- =====================================
+         MASTER SIDEBAR CSS
+    ====================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../css/sidebar.css">
+
+
+    <!-- =====================================
+         DASHBOARD CSS
+    ====================================== -->
+
+    <link
+        rel="stylesheet"
+        href="../css/dashboard.css">
+
+
+    <!-- =====================================
+         FONT AWESOME
+    ====================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar">
+
+
+        <!-- Sidebar Header -->
+
+        <div class="sidebar-header">
+
+
+            <!-- Brand -->
+
+            <div class="brand">
+
+                <div class="brand-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+
+                <span class="brand-text">
+
+                    Data Guardian AI
+
+                </span>
+
+            </div>
+
+
+            <!-- Toggle -->
+
+            <button
+                type="button"
+                class="toggle-btn"
+                id="sidebarToggle"
+                aria-label="Toggle sidebar">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+        </div>
+
+
+        <!-- =====================================
+             NAVIGATION
+        ====================================== -->
+
+        <nav class="sidebar-nav">
+
+
+            <!-- MAIN -->
+
+            <p class="nav-title">
+                MAIN
+            </p>
+
+
+            <a
+                href="dashboard.html"
+                class="nav-item active">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="upload.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <span>
+                    Upload Dataset
+                </span>
+
+            </a>
+
+
+            <a
+                href="analysis.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <span>
+                    Analysis
+                </span>
+
+            </a>
+
+
+            <!-- MANAGEMENT -->
+
+            <p class="nav-title">
+                MANAGEMENT
+            </p>
+
+
+            <a
+                href="reports.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <span>
+                    Reports
+                </span>
+
+            </a>
+
+
+            <a
+                href="chat.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-comments"></i>
+
+                <span>
+                    AI Chat
+                </span>
+
+            </a>
+
+
+            <a
+                href="history.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                <span>
+                    History
+                </span>
+
+            </a>
+
+
+            <!-- SYSTEM -->
+
+            <p class="nav-title">
+                SYSTEM
+            </p>
+
+
+            <a
+                href="settings.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+        <!-- =====================================
+             LOGOUT
+        ====================================== -->
+
+        <div class="sidebar-bottom">
+
+            <a
+                href="index.html"
+                class="nav-item logout">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+
+    </aside>
+
+
+    <!-- =====================================
+         MAIN CONTENT
+    ====================================== -->
+
+    <main class="main-content">
+
+
+        <!-- TOP BAR -->
+
+        <header class="topbar">
+
+
+            <div>
+
+                <h1>
+                    Dashboard
+                </h1>
+
+                <p>
+                    Monitor your dataset quality and AI analysis.
+                </p>
+
+            </div>
+
+
+            <a
+                href="upload.html"
+                class="upload-btn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                Upload Dataset
+
+            </a>
+
+
+        </header>
+
+
+        <!-- =====================================
+             KPI CARDS
+        ====================================== -->
+
+        <section class="cards">
+
+
+            <!-- Datasets -->
+
+            <div class="card">
+
+                <div class="card-top">
+
+                    <div class="card-icon blue">
+
+                        <i class="fa-solid fa-database"></i>
+
+                    </div>
+
+                    <span class="card-label">
+                        DATASETS
+                    </span>
+
+                </div>
+
+
+                <h2 id="datasets">
+                    0
+                </h2>
+
+
+                <p>
+                    Total datasets analyzed
+                </p>
+
+            </div>
+
+
+            <!-- Quality -->
+
+            <div class="card">
+
+                <div class="card-top">
+
+                    <div class="card-icon green">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                    </div>
+
+                    <span class="card-label">
+                        QUALITY
+                    </span>
+
+                </div>
+
+
+                <h2 id="score">
+                    0%
+                </h2>
+
+
+                <p>
+                    Overall data quality
+                </p>
+
+            </div>
+
+
+            <!-- Reports -->
+
+            <div class="card">
+
+                <div class="card-top">
+
+                    <div class="card-icon purple">
+
+                        <i class="fa-solid fa-file-lines"></i>
+
+                    </div>
+
+                    <span class="card-label">
+                        REPORTS
+                    </span>
+
+                </div>
+
+
+                <h2 id="reports">
+                    0
+                </h2>
+
+
+                <p>
+                    Reports generated
+                </p>
+
+            </div>
+
+
+            <!-- Issues -->
+
+            <div class="card">
+
+                <div class="card-top">
+
+                    <div class="card-icon red">
+
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+
+                    </div>
+
+                    <span class="card-label">
+                        ISSUES
+                    </span>
+
+                </div>
+
+
+                <h2 id="issues">
+                    0
+                </h2>
+
+
+                <p>
+                    Data quality issues
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =====================================
+             DATASET SUMMARY
+        ====================================== -->
+
+        <section class="panel">
+
+
+            <div class="panel-header">
+
+
+                <div>
+
+                    <h2>
+                        Dataset Summary
+                    </h2>
+
+                    <p>
+                        Overview of your latest dataset.
+                    </p>
+
+                </div>
+
+
+                <span class="status-badge">
+
+                    <i class="fa-solid fa-circle"></i>
+
+                    Analysis Complete
+
+                </span>
+
+
+            </div>
+
+
+            <div class="summary-grid">
+
+
+                <div class="summary-item">
+
+                    <span>
+
+                        <i class="fa-solid fa-table"></i>
+
+                        Rows
+
+                    </span>
+
+
+                    <strong id="rows">
+                        --
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-item">
+
+                    <span>
+
+                        <i class="fa-solid fa-table-columns"></i>
+
+                        Columns
+
+                    </span>
+
+
+                    <strong id="columns">
+                        --
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-item">
+
+                    <span>
+
+                        <i class="fa-solid fa-circle-exclamation"></i>
+
+                        Missing Values
+
+                    </span>
+
+
+                    <strong id="missing">
+                        --
+                    </strong>
+
+                </div>
+
+
+                <div class="summary-item">
+
+                    <span>
+
+                        <i class="fa-solid fa-copy"></i>
+
+                        Duplicate Rows
+
+                    </span>
+
+
+                    <strong id="duplicates">
+                        --
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =====================================
+             VALIDATION + AI
+        ====================================== -->
+
+        <div class="dashboard-grid">
+
+
+            <!-- Validation -->
+
+            <section class="panel">
+
+
+                <div class="panel-header">
+
+
+                    <div>
+
+                        <h2>
+                            Validation Summary
+                        </h2>
+
+                        <p>
+                            Data quality checks.
+                        </p>
+
+                    </div>
+
+
+                    <i
+                        class="fa-solid fa-circle-check panel-icon">
+                    </i>
+
+
+                </div>
+
+
+                <div
+                    id="validation"
+                    class="content-box">
+
+
+                    <p class="empty-state">
+
+                        No analysis yet.
+
+                    </p>
+
+
+                </div>
+
+
+            </section>
+
+
+            <!-- AI Insights -->
+
+            <section class="panel">
+
+
+                <div class="panel-header">
+
+
+                    <div>
+
+                        <h2>
+                            AI Insights
+                        </h2>
+
+                        <p>
+                            Intelligent recommendations.
+                        </p>
+
+                    </div>
+
+
+                    <i
+                        class="fa-solid fa-wand-magic-sparkles panel-icon">
+                    </i>
+
+
+                </div>
+
+
+                <div
+                    id="insights"
+                    class="content-box">
+
+
+                    <p class="empty-state">
+
+                        Waiting for analysis...
+
+                    </p>
+
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+        <!-- =====================================
+             CLEANING
+        ====================================== -->
+
+        <section class="panel">
+
+
+            <div class="panel-header">
+
+
+                <div>
+
+                    <h2>
+                        Cleaning Summary
+                    </h2>
+
+                    <p>
+                        Changes made during automatic cleaning.
+                    </p>
+
+                </div>
+
+
+                <i
+                    class="fa-solid fa-broom panel-icon">
+                </i>
+
+
+            </div>
+
+
+            <div
+                id="cleaning"
+                class="content-box">
+
+
+                <p class="empty-state">
+
+                    No cleaning performed.
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =====================================
+             REPORT
+        ====================================== -->
+
+        <section class="report-action">
+
+
+            <div>
+
+                <h2>
+                    Executive Report
+                </h2>
+
+                <p>
+                    Download a professional report containing
+                    the complete analysis of your dataset.
+                </p>
+
+            </div>
+
+
+            <button
+                id="downloadReport"
+                type="button">
+
+                <i class="fa-solid fa-download"></i>
+
+                Download Report
+
+            </button>
+
+
+        </section>
+
+
+        <!-- =====================================
+             FOOTER
+        ====================================== -->
+
+        <footer>
+
+            <p>
+                © 2026 Data Guardian AI
+            </p>
+
+            <span>
+                AI-powered data quality platform
+            </span>
+
+        </footer>
+
+
+    </main>
+
+
+</div>
+
+
+<!-- =====================================
+     JAVASCRIPT
+===================================== -->
+
+<script src="../Javascript/dashboard.js"></script>
+
+<script src="../Javascript/sidebar.js"></script>
+
+
+</body>
+
+</html>

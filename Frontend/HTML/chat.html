@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Chat | Data Guardian AI</title>
+
+    <link rel="stylesheet" href="../css/chat.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    >
+</head>
+<body>
+
+<div class="chat-container">
+
+    <!-- Sidebar -->
+
+    <aside class="sidebar">
+
+        <h2>Data Guardian AI</h2>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">
+                    🏠 Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="upload.html">
+                    📤 Upload Dataset
+                </a>
+            </li>
+
+            <li>
+                <a href="analysis.html">
+                    📊 Analysis
+                </a>
+            </li>
+
+            <li class="active">
+                <a href="chat.html">
+                    🤖 AI Chat
+                </a>
+            </li>
+
+            <li>
+                <a href="reports.html">
+                    📄 Reports
+                </a>
+            </li>
+
+            <li>
+                <a href="history.html">
+                    🕘 History
+                </a>
+            </li>
+
+            <li>
+                <a href="settings.html">
+                    ⚙️ Settings
+                </a>
+            </li>
+
+            <li>
+                <a href="index.html">
+                    🚪 Logout
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+
+    <!-- Main Chat -->
+
+    <main class="chat-main">
+
+        <header class="chat-header">
+
+            <h1>🤖 AI Data Assistant</h1>
+
+            <p>
+                Ask questions about your analyzed dataset.
+            </p>
+
+        </header>
+
+
+        <!-- Messages -->
+
+        <div id="chatMessages"
+             class="chat-messages">
+
+            <div class="message ai-message">
+
+                <strong>Data Guardian AI</strong>
+
+                <p>
+                    Hello! I can answer questions about
+                    your analyzed dataset.
+                </p>
+
+                <p>
+                    Try asking:
+                </p>
+
+                <ul>
+
+                    <li>What is the quality score?</li>
+
+                    <li>How many missing values are there?</li>
+
+                    <li>How many outliers were detected?</li>
+
+                    <li>What are the business risks?</li>
+
+                    <li>Give me your recommendations.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <!-- Input -->
+
+        <div class="chat-input-area">
+
+            <input
+                type="text"
+                id="chatInput"
+                placeholder="Ask something about your dataset..."
+                autocomplete="off"
+            >
+
+            <button id="sendButton">
+
+                Send
+
+            </button>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="../Javascript/chat.js"></script>
+</body>
+
+</html>

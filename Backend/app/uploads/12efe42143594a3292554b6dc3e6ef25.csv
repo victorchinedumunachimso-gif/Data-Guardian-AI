@@ -1,0 +1,201 @@
+Order_ID, Date      , Region, Salesperson, Product   , Quantity, Unit_Price, Discount, Customer_Rating, Category   , Revenue
+    1001, 2025-01-01, Kano  , John       , Tablet    ,      1.0,   250000.0,     0.1 ,             2.8, Phones     ,  225000.0
+    1002, 2025-01-02, Oyo   , John       , Monitor   ,      8.0,   100000.0,     0.15,             4.8, Computers  ,  680000.0
+    1003, 2025-01-03, Rivers, John       , Tablet    ,      5.0,   150000.0,     0.2 ,             4.5, Phones     ,  600000.0
+    1004, 2025-01-04, Oyo   , Ada        , Laptop    ,      4.0,    50000.0,     0.05,             2.6, Computers  ,  190000.0
+    1005, 2025-01-05, Oyo   , Esther     , Laptop    ,      8.0,   100000.0,     0.05,             4.1, Computers  ,  760000.0
+    1006, 2025-01-06, Abuja , Ada        , Monitor   ,      7.0,   250000.0,     0.1 ,             4.4, Computers  , 1575000.0
+    1007, 2025-01-07, Rivers, Grace      , Monitor   ,      2.0,   100000.0,     0.1 ,             3.4, Computers  ,  180000.0
+    1008, 2025-01-08, Rivers, Ada        , Keyboard  ,         ,   100000.0,     0.0 ,             2.7, Accessories,  100000.0
+    1009, 2025-01-09, Rivers, Chinedu    , Headphones,      4.0,   100000.0,     0.2 ,             2.7, Accessories,  320000.0
+    1010, 2025-01-10, Oyo   , Esther     , Keyboard  ,      8.0,    35000.0,     0.15,             2.8, Accessories,  238000.0
+    1011, 2025-01-11, Kano  , Esther     , Headphones,      2.0,    35000.0,     0.05,             4.6, Accessories,   66500.0
+    1012, 2025-01-12, Rivers, Grace      , Keyboard  ,      3.0,    50000.0,     0.0 ,             4.8, Accessories,  150000.0
+    1013, 2025-01-13, Enugu , Ife        , Tablet    ,      1.0,    25000.0,     0.0 ,             2.8, Phones     ,   25000.0
+    1014, 2025-01-14, Oyo   , Chinedu    , Monitor   ,      1.0,   100000.0,     0.05,             3.1, Computers  ,   95000.0
+    1015, 2025-01-15, Abuja , Daniel     , Laptop    ,      3.0,   150000.0,     0.15,             2.9, Computers  ,  382500.0
+    1016, 2025-01-16, Kano  , Ada        , Headphones,      5.0,    25000.0,     0.0 ,                , Accessories,  125000.0
+    1017, 2025-01-17, Enugu , Femi       , Headphones,      3.0,   150000.0,     0.0 ,             4.6, Accessories,  450000.0
+    1018, 2025-01-18, Enugu , Ada        , Laptop    ,      1.0,    25000.0,     0.2 ,             3.3, Computers  ,   20000.0
+    1019, 2025-01-19, Abuja , John       , Keyboard  ,      1.0,    50000.0,     0.15,             3.3, Accessories,   42500.0
+    1020, 2025-01-20, Kano  , Ada        , Headphones,      8.0,   100000.0,     0.0 ,             3.1, Accessories,  800000.0
+    1021, 2025-01-21, Oyo   , Daniel     , Mouse     ,      2.0,   100000.0,     0.15,             4.0, Accessories,  170000.0
+    1022, 2025-01-22, Lagos , Ada        , Tablet    ,      3.0,    75000.0,     0.05,             3.4, Phones     ,  213750.0
+    1023, 2025-01-23,       , Chinedu    , Monitor   ,      2.0,   150000.0,     0.1 ,             4.4, Computers  ,  270000.0
+    1024, 2025-01-24, Abuja , Chinedu    , Laptop    ,      3.0,    25000.0,     0.0 ,             3.0, Computers  ,   75000.0
+    1025, 2025-01-25, Enugu , Esther     , Monitor   ,      7.0,    25000.0,     0.2 ,             4.5, Computers  ,  140000.0
+    1026, 2025-01-26, Oyo   , Grace      , Mouse     ,      1.0,   400000.0,     0.05,             4.0, Accessories,  380000.0
+    1027, 2025-01-27, Kano  , Ife        , Headphones,      8.0,   400000.0,     0.15,             2.8, Accessories, 2720000.0
+    1028, 2025-01-28, Lagos , Femi       , Headphones,      2.0,    35000.0,     0.05,             3.5, Accessories,   66500.0
+    1029, 2025-01-29, Lagos , John       , Mouse     ,      3.0,    75000.0,     0.0 ,             4.7, Accessories,  225000.0
+    1030, 2025-01-30, Rivers, Ada        , Laptop    ,      9.0,   250000.0,     0.15,             4.8, Computers  , 1912500.0
+    1031, 2025-01-31, Rivers, Ada        , Tablet    ,      7.0,   400000.0,     0.1 ,             3.7, Phones     , 2520000.0
+    1032, 2025-02-01, Abuja , Daniel     , Smartphone,         ,   250000.0,     0.05,             3.7, Phones     ,  950000.0
+    1033, 2025-02-02, Kano  , Grace      , Laptop    ,      5.0,    35000.0,     0.0 ,             4.8, Computers  ,  175000.0
+    1034, 2025-02-03, Kano  , Chinedu    , Smartphone,      2.0,    35000.0,     0.2 ,             4.0, Phones     ,   56000.0
+    1035, 2025-02-04, Enugu , Femi       , Mouse     ,      8.0,    35000.0,     0.15,             2.6, Accessories,  238000.0
+    1036, 2025-02-05, Enugu , Esther     , Keyboard  ,      4.0,           ,     0.05,             4.8, Accessories,  570000.0
+    1037, 2025-02-06, Enugu , Chinedu    , Smartphone,      9.0,   150000.0,     0.05,             3.1, Phones     , 1282500.0
+    1038, 2025-02-07, Rivers, John       , Tablet    ,      5.0,    50000.0,     0.1 ,             3.9, Phones     ,  225000.0
+    1039, 2025-02-08, Kano  , Grace      , Keyboard  ,      9.0,    50000.0,     0.1 ,             2.9, Accessories,  405000.0
+    1040, 2025-02-09, Kano  , John       , Smartphone,      4.0,    35000.0,     0.2 ,             2.6, Phones     ,  112000.0
+    1041, 2025-02-10, Lagos , Ife        , Mouse     ,      5.0,    75000.0,     0.2 ,             3.3, Accessories,  300000.0
+    1042, 2025-02-11, Rivers, Esther     , Keyboard  ,      9.0,    25000.0,     0.0 ,             4.5, Accessories,  225000.0
+    1043, 2025-02-12, Oyo   , Ife        , Mouse     ,      8.0,   150000.0,     0.0 ,             3.2, Accessories, 1200000.0
+    1044, 2025-02-13, Rivers, Daniel     , Smartphone,      3.0,    75000.0,     0.2 ,             3.1, Phones     ,  180000.0
+    1045, 2025-02-14, Oyo   , John       , Mouse     ,      1.0,   100000.0,     0.2 ,             3.0, Accessories,   80000.0
+    1046, 2025-02-15, Lagos , Daniel     , Tablet    ,      3.0,   150000.0,     0.15,             3.8, Phones     ,  382500.0
+    1047, 2025-02-16, Abuja , Ada        , Smartphone,      4.0,   150000.0,     0.1 ,             4.9, Phones     ,  540000.0
+    1048, 2025-02-17, Kano  , Ife        , Smartphone,      2.0,    50000.0,     0.0 ,             3.6, Phones     ,  100000.0
+    1049, 2025-02-18, Lagos , Grace      , Smartphone,      1.0,    25000.0,     0.1 ,                , Phones     ,   22500.0
+    1050, 2025-02-19, Kano  , John       , Laptop    ,      7.0,    25000.0,     0.1 ,             4.7, Computers  ,  157500.0
+    1051, 2025-02-20, Enugu , Femi       , Laptop    ,      8.0,   400000.0,     0.2 ,             3.8, Computers  , 2560000.0
+    1052, 2025-02-21, Abuja , Esther     , Laptop    ,      7.0,   250000.0,     0.15,             3.0, Computers  , 1487500.0
+    1053,           , Abuja , Chinedu    , Tablet    ,      5.0,   250000.0,     0.05,             3.2, Phones     , 1187500.0
+    1054, 2025-02-23, Lagos , Grace      , Keyboard  ,      1.0,   250000.0,     0.15,             3.3, Accessories,  212500.0
+    1055, 2025-02-24, Abuja , Grace      , Mouse     ,      7.0,   250000.0,     0.15,             3.5, Accessories, 1487500.0
+    1056, 2025-02-25, Oyo   , Daniel     , Headphones,      7.0,   100000.0,     0.1 ,             3.6, Accessories,  630000.0
+    1057, 2025-02-26, Abuja , Ife        , Smartphone,      9.0,   100000.0,     0.15,             4.5, Phones     ,  765000.0
+    1058, 2025-02-27, Kano  , John       , Mouse     ,      3.0,   150000.0,     0.0 ,             3.4, Accessories,  450000.0
+    1059, 2025-02-28, Kano  , John       , Smartphone,      9.0,    35000.0,     0.1 ,             3.7, Phones     ,  283500.0
+    1060, 2025-03-01, Kano  , Ada        , Tablet    ,      1.0,    50000.0,     0.0 ,             4.1, Phones     ,   50000.0
+    1061, 2025-03-02, Kano  , Ada        , Smartphone,      1.0,    50000.0,     0.05,             3.4, Phones     ,   47500.0
+    1062, 2025-03-03, Oyo   , Esther     , Laptop    ,      4.0,   250000.0,     0.1 ,             4.6, Computers  ,  900000.0
+    1063, 2025-03-04, Rivers, Daniel     , Headphones,      9.0,   150000.0,     0.05,             4.0, Accessories, 1282500.0
+    1064, 2025-03-05, Enugu , Grace      , Monitor   ,      6.0,   400000.0,     0.1 ,             3.2, Computers  , 2160000.0
+    1065, 2025-03-06, Lagos , John       , Smartphone,      3.0,    75000.0,     0.2 ,             4.3, Phones     ,  180000.0
+    1066, 2025-03-07, Kano  , Femi       , Mouse     ,      1.0,    35000.0,     0.15,             3.8, Accessories,   29750.0
+    1067, 2025-03-08, Abuja , Daniel     , Laptop    ,      4.0,   150000.0,     0.2 ,             3.8, Computers  ,  480000.0
+    1068, 2025-03-09, Kano  , Esther     , Monitor   ,      9.0,    35000.0,     0.05,             3.7, Computers  ,  299250.0
+    1069, 2025-03-10, Abuja , Esther     , Headphones,      3.0,    35000.0,     0.15,             3.7, Accessories,   89250.0
+    1070, 2025-03-11, Enugu , Daniel     , Monitor   ,      9.0,    35000.0,     0.1 ,             4.4, Computers  ,  283500.0
+    1071, 2025-03-12, Enugu , Esther     , Laptop    ,      7.0,   150000.0,     0.15,             2.8, Computers  ,  892500.0
+    1072, 2025-03-13, Enugu , Daniel     , Keyboard  ,      4.0,   250000.0,     0.0 ,             3.3, Accessories, 1000000.0
+    1073, 2025-03-14, Abuja , Chinedu    , Keyboard  ,      3.0,    50000.0,     0.15,             2.7, Accessories,  127500.0
+    1074, 2025-03-15, Kano  , Daniel     , Monitor   ,      5.0,    50000.0,     0.0 ,             4.4, Computers  ,  250000.0
+    1075, 2025-03-16, Enugu , Ife        , Tablet    ,      5.0,   250000.0,     0.15,             3.2, Phones     , 1062500.0
+    1076, 2025-03-17, Oyo   , Daniel     , Mouse     ,      3.0,    35000.0,     0.0 ,             4.7, Accessories,  105000.0
+    1077, 2025-03-18, Abuja , Esther     , Mouse     ,         ,    75000.0,     0.05,             3.8, Accessories,  641250.0
+    1078, 2025-03-19, Abuja , John       , Monitor   ,      4.0,    25000.0,     0.2 ,             4.5, Computers  ,   80000.0
+    1079, 2025-03-20, Kano  , Ife        , Smartphone,      5.0,   150000.0,     0.1 ,             4.9, Phones     ,  675000.0
+    1080, 2025-03-21, Abuja , Esther     , Smartphone,      4.0,    25000.0,     0.15,             4.6, Phones     ,   85000.0
+    1081, 2025-03-22, Abuja , Ada        , Mouse     ,      5.0,   400000.0,     0.2 ,             4.7, Accessories, 1600000.0
+    1082, 2025-03-23, Enugu , Ada        , Mouse     ,      7.0,   250000.0,     0.1 ,             3.5, Accessories, 1575000.0
+    1083, 2025-03-24, Kano  , John       , Keyboard  ,      9.0,    75000.0,     0.1 ,             3.9, Accessories,  607500.0
+    1084, 2025-03-25, Enugu , John       , Tablet    ,      7.0,   150000.0,     0.0 ,             3.1, Phones     , 1050000.0
+    1085, 2025-03-26, Enugu , Ife        , Laptop    ,      5.0,   250000.0,     0.05,             3.0, Computers  , 1187500.0
+    1086, 2025-03-27, Kano  , Chinedu    , Smartphone,      7.0,    35000.0,     0.05,             3.8, Phones     ,  232750.0
+    1087, 2025-03-28, Lagos , John       , Mouse     ,      5.0,    50000.0,     0.2 ,             4.0, Accessories,  200000.0
+    1088, 2025-03-29, Enugu , Ada        , Keyboard  ,      3.0,    25000.0,     0.05,             3.3, Accessories,   71250.0
+    1089, 2025-03-30, Oyo   , Daniel     , Headphones,      7.0,   100000.0,     0.15,             3.9, Accessories,  595000.0
+    1090, 2025-03-31, Oyo   , Esther     , Keyboard  ,      2.0,   100000.0,     0.05,             4.7, Accessories,  190000.0
+    1091, 2025-04-01, Abuja , Ada        , Smartphone,      9.0,    75000.0,     0.2 ,             3.9, Phones     ,  540000.0
+    1092, 2025-04-02,       , Ada        , Smartphone,      1.0,    35000.0,     0.05,             4.3, Phones     ,   33250.0
+    1093, 2025-04-03, Abuja , Chinedu    , Keyboard  ,      6.0,   400000.0,     0.15,             4.5, Accessories, 2040000.0
+    1094, 2025-04-04, Lagos , Ife        , Laptop    ,      7.0,    25000.0,     0.0 ,             5.0, Computers  ,  175000.0
+    1095, 2025-04-05, Kano  , Ife        , Monitor   ,      8.0,    35000.0,     0.2 ,             4.0, Computers  ,  224000.0
+    1096, 2025-04-06, Kano  , Grace      , Smartphone,      9.0,    25000.0,     0.0 ,             4.5, Phones     ,  225000.0
+    1097, 2025-04-07, Kano  , Chinedu    , Keyboard  ,      2.0,    75000.0,     0.0 ,             4.9, Accessories,  150000.0
+    1098, 2025-04-08, Oyo   , Daniel     , Mouse     ,      2.0,    75000.0,     0.0 ,             4.9, Accessories,  150000.0
+    1099, 2025-04-09, Lagos , Ife        , Keyboard  ,      5.0,   400000.0,     0.1 ,             2.9, Accessories, 1800000.0
+    1100, 2025-04-10, Oyo   , Esther     , Tablet    ,      5.0,   100000.0,     0.1 ,             3.5, Phones     ,  450000.0
+    1101, 2025-04-11, Oyo   , John       , Monitor   ,      6.0,    35000.0,     0.0 ,             3.3, Computers  ,  210000.0
+    1102, 2025-04-12, Lagos , Chinedu    , Headphones,      3.0,   150000.0,     0.2 ,             2.7, Accessories,  360000.0
+    1103, 2025-04-13, Lagos , John       , Laptop    ,      8.0,   100000.0,     0.15,             4.1, Computers  ,  680000.0
+    1104, 2025-04-14, Lagos , Ada        , Headphones,      1.0,    35000.0,     0.15,                , Accessories,   29750.0
+    1105, 2025-04-15, Lagos , Esther     , Monitor   ,      6.0,   100000.0,     0.05,             4.6, Computers  ,  570000.0
+    1106, 2025-04-16, Kano  , Esther     , Monitor   ,      4.0,   150000.0,     0.2 ,             2.8, Computers  ,  480000.0
+    1107, 2025-04-17, Rivers, Ada        , Monitor   ,      1.0,    50000.0,     0.1 ,             4.7, Computers  ,   45000.0
+    1108, 2025-04-18, Rivers, Chinedu    , Headphones,      7.0,    50000.0,     0.0 ,             4.1, Accessories,  350000.0
+    1109, 2025-04-19, Lagos , Ada        , Mouse     ,      9.0,   400000.0,     0.05,             4.3, Accessories, 3420000.0
+    1110, 2025-04-20, Rivers, John       , Monitor   ,      4.0,    50000.0,     0.15,             4.8, Computers  ,  170000.0
+    1111, 2025-04-21, Rivers, Grace      , Keyboard  ,      4.0,    50000.0,     0.1 ,             4.1, Accessories,  180000.0
+    1112, 2025-04-22, Lagos , Esther     , Headphones,      6.0,   250000.0,     0.1 ,             3.3, Accessories, 1350000.0
+    1113, 2025-04-23, Rivers, Femi       , Monitor   ,      3.0,           ,     0.0 ,             4.6, Computers  ,   75000.0
+    1114, 2025-04-24, Oyo   , Femi       , Keyboard  ,      6.0,   250000.0,     0.15,             3.4, Accessories, 1275000.0
+    1115, 2025-04-25, Abuja , John       , Mouse     ,      7.0,   250000.0,     0.2 ,             2.6, Accessories, 1400000.0
+    1116, 2025-04-26, Abuja , Daniel     , Tablet    ,      3.0,   400000.0,     0.1 ,             4.6, Phones     , 1080000.0
+    1117, 2025-04-27, Lagos , Ife        , Mouse     ,      7.0,   250000.0,     0.0 ,             3.4, Accessories, 1750000.0
+    1118, 2025-04-28, Kano  , Ada        , Monitor   ,      3.0,    50000.0,     0.2 ,             4.4, Computers  ,  120000.0
+    1119, 2025-04-29, Lagos , Ada        , Headphones,      2.0,   150000.0,     0.15,             3.4, Accessories,  255000.0
+    1120, 2025-04-30, Kano  , Daniel     , Smartphone,      4.0,   400000.0,     0.1 ,             4.7, Phones     , 1440000.0
+    1121, 2025-05-01, Abuja , Daniel     , Monitor   ,      8.0,   400000.0,     0.2 ,             3.0, Computers  , 2560000.0
+    1122, 2025-05-02, Lagos , John       , Smartphone,         ,    75000.0,     0.2 ,             4.9, Phones     ,  540000.0
+    1123, 2025-05-03, Enugu , John       , Keyboard  ,      7.0,   400000.0,     0.2 ,             4.4, Accessories, 2240000.0
+    1124, 2025-05-04, Oyo   , Daniel     , Tablet    ,      1.0,    75000.0,     0.1 ,             2.8, Phones     ,   67500.0
+    1125, 2025-05-05, Rivers, Esther     , Laptop    ,      3.0,   400000.0,     0.1 ,             3.9, Computers  , 1080000.0
+    1126, 2025-05-06, Kano  , John       , Mouse     ,      9.0,    25000.0,     0.05,             5.0, Accessories,  213750.0
+    1127, 2025-05-07, Enugu , Grace      , Tablet    ,      1.0,    50000.0,     0.15,             3.7, Phones     ,   42500.0
+    1128, 2025-05-08, Rivers, John       , Monitor   ,      9.0,   400000.0,     0.0 ,             3.0, Computers  , 3600000.0
+    1129, 2025-05-09, Rivers, Ada        , Smartphone,      8.0,    50000.0,     0.2 ,             3.7, Phones     ,  320000.0
+    1130, 2025-05-10, Lagos , John       , Mouse     ,      1.0,    50000.0,     0.05,             3.8, Accessories,   47500.0
+    1131, 2025-05-11, Rivers, Esther     , Smartphone,      6.0,   100000.0,     0.0 ,             4.4, Phones     ,  600000.0
+    1132, 2025-05-12, Oyo   , Daniel     , Headphones,      5.0,   400000.0,     0.05,             4.2, Accessories, 1900000.0
+    1133, 2025-05-13, Enugu , Ada        , Smartphone,      6.0,    35000.0,     0.1 ,             3.5, Phones     ,  189000.0
+    1134, 2025-05-14, Rivers, John       , Headphones,      5.0,   100000.0,     0.2 ,             3.0, Accessories,  400000.0
+    1135, 2025-05-15, Lagos , Esther     , Keyboard  ,      6.0,    35000.0,     0.0 ,             4.1, Accessories,  210000.0
+    1136, 2025-05-16, Oyo   , Grace      , Mouse     ,      5.0,    50000.0,     0.0 ,             3.6, Accessories,  250000.0
+    1137, 2025-05-17, Abuja , John       , Mouse     ,      5.0,    50000.0,     0.0 ,             2.8, Accessories,  250000.0
+    1138, 2025-05-18, Enugu , Esther     , Laptop    ,      4.0,   100000.0,     0.0 ,             4.8, Computers  ,  400000.0
+    1139, 2025-05-19, Rivers, Grace      , Monitor   ,      3.0,   100000.0,     0.0 ,             4.2, Computers  ,  300000.0
+    1140, 2025-05-20, Lagos , Daniel     , Headphones,      3.0,    35000.0,     0.05,             4.2, Accessories,   99750.0
+    1141, 2025-05-21, Abuja , John       , Laptop    ,      4.0,    75000.0,     0.2 ,             4.6, Computers  ,  240000.0
+    1142, 2025-05-22, Abuja , Grace      , Smartphone,      9.0,    35000.0,     0.1 ,             3.8, Phones     ,  283500.0
+    1143, 2025-05-23, Kano  , Ada        , Smartphone,      2.0,   100000.0,     0.1 ,             4.5, Phones     ,  180000.0
+    1144, 2025-05-24, Oyo   , Daniel     , Laptop    ,      9.0,   150000.0,     0.1 ,             3.7, Computers  , 1215000.0
+    1145, 2025-05-25, Rivers, Ada        , Mouse     ,      1.0,   100000.0,     0.1 ,                , Accessories,   90000.0
+    1146, 2025-05-26, Lagos , Femi       , Smartphone,      1.0,   150000.0,     0.05,             3.5, Phones     ,  142500.0
+    1147, 2025-05-27, Kano  , Chinedu    , Keyboard  ,      5.0,    25000.0,     0.15,             3.7, Accessories,  106250.0
+    1148, 2025-05-28, Oyo   , John       , Keyboard  ,      6.0,   100000.0,     0.2 ,             4.3, Accessories,  480000.0
+    1149, 2025-05-29, Kano  , Grace      , Laptop    ,      6.0,    25000.0,     0.0 ,             2.8, Computers  ,  150000.0
+    1150, 2025-05-30, Enugu , Chinedu    , Headphones,      3.0,    75000.0,     0.15,             2.9, Accessories,  191250.0
+    1151, 2025-05-31, Oyo   , Chinedu    , Headphones,      7.0,    35000.0,     0.1 ,             3.2, Accessories,  220500.0
+    1152, 2025-06-01, Oyo   , Grace      , Laptop    ,      9.0,   150000.0,     0.15,             3.2, Computers  , 1147500.0
+    1153, 2025-06-02, Rivers, Daniel     , Headphones,      8.0,    35000.0,     0.2 ,             4.3, Accessories,  224000.0
+    1154, 2025-06-03, Oyo   , John       , Mouse     ,      6.0,    25000.0,     0.0 ,             3.1, Accessories,  150000.0
+    1155, 2025-06-04, Kano  , Femi       , Mouse     ,      8.0,   150000.0,     0.0 ,             4.1, Accessories, 1200000.0
+    1156, 2025-06-05, Oyo   , Ada        , Headphones,      5.0,    35000.0,     0.2 ,             3.7, Accessories,  140000.0
+    1157, 2025-06-06, Rivers, Esther     , Keyboard  ,      8.0,   100000.0,     0.2 ,             3.9, Accessories,  640000.0
+    1158, 2025-06-07,       , Ada        , Headphones,      4.0,    50000.0,     0.1 ,             4.6, Accessories,  180000.0
+    1159, 2025-06-08, Enugu , Esther     , Mouse     ,      8.0,    25000.0,     0.0 ,             3.5, Accessories,  200000.0
+    1160, 2025-06-09, Kano  , Ada        , Tablet    ,      2.0,    35000.0,     0.15,             4.4, Phones     ,   59500.0
+    1161, 2025-06-10, Abuja , Grace      , Monitor   ,      5.0,    25000.0,     0.05,             3.6, Computers  ,  118750.0
+    1162, 2025-06-11, Abuja , Femi       , Smartphone,      9.0,   250000.0,     0.05,             3.4, Phones     , 2137500.0
+    1163, 2025-06-12, Oyo   , John       , Tablet    ,      4.0,    25000.0,     0.2 ,             4.9, Phones     ,   80000.0
+    1164, 2025-06-13, Enugu , Esther     , Headphones,      6.0,   150000.0,     0.1 ,             3.0, Accessories,  810000.0
+    1165, 2025-06-14, Lagos , John       , Keyboard  ,      1.0,   250000.0,     0.05,             2.7, Accessories,  237500.0
+    1166, 2025-06-15, Oyo   , John       , Laptop    ,      9.0,   400000.0,     0.0 ,             4.4, Computers  , 3600000.0
+    1167, 2025-06-16, Enugu , John       , Headphones,      1.0,   150000.0,     0.2 ,             2.7, Accessories,  120000.0
+    1168, 2025-06-17, Kano  , Ife        , Keyboard  ,      5.0,    50000.0,     0.15,             4.6, Accessories,  212500.0
+    1169, 2025-06-18, Kano  , Daniel     , Monitor   ,      4.0,   250000.0,     0.2 ,             3.6, Computers  ,  800000.0
+    1170, 2025-06-19, Kano  , Ada        , Headphones,         ,   400000.0,     0.15,             4.8, Accessories, 1020000.0
+    1171, 2025-06-20, Kano  , John       , Mouse     ,      6.0,   100000.0,     0.2 ,             4.3, Accessories,  480000.0
+    1172, 2025-06-21, Kano  , Ada        , Laptop    ,      2.0,    25000.0,     0.2 ,             4.0, Computers  ,   40000.0
+    1173, 2025-06-22, Enugu , John       , Keyboard  ,      3.0,    35000.0,     0.2 ,             4.9, Accessories,   84000.0
+    1174, 2025-06-23, Enugu , Esther     , Keyboard  ,      5.0,    75000.0,     0.15,             3.5, Accessories,  318750.0
+    1175, 2025-06-24, Rivers, Daniel     , Keyboard  ,      9.0,    25000.0,     0.15,             4.9, Accessories,  191250.0
+    1176, 2025-06-25, Abuja , Daniel     , Monitor   ,      2.0,   400000.0,     0.2 ,             2.8, Computers  ,  640000.0
+    1177, 2025-06-26, Kano  , Grace      , Headphones,      8.0,    25000.0,     0.05,             3.7, Accessories,  190000.0
+    1178, 2025-06-27, Lagos , Ife        , Monitor   ,      2.0,    50000.0,     0.1 ,             3.2, Computers  ,   90000.0
+    1179, 2025-06-28, Enugu , Grace      , Smartphone,      5.0,   100000.0,     0.1 ,             3.8, Phones     ,  450000.0
+    1180, 2025-06-29, Lagos , Grace      , Smartphone,      7.0,    75000.0,     0.1 ,             2.9, Phones     ,  472500.0
+    1181, 2025-06-30, Lagos , Grace      , Headphones,      8.0,   250000.0,     0.15,             4.6, Accessories, 1700000.0
+    1182, 2025-07-01, Lagos , Grace      , Mouse     ,      1.0,   250000.0,     0.15,             4.6, Accessories,  212500.0
+    1183, 2025-07-02, Rivers, Grace      , Monitor   ,      6.0,   250000.0,     0.05,             4.9, Computers  , 1425000.0
+    1184, 2025-07-03, Enugu , Femi       , Laptop    ,      1.0,   400000.0,     0.1 ,             2.9, Computers  ,  360000.0
+    1185, 2025-07-04, Lagos , Daniel     , Keyboard  ,      2.0,   150000.0,     0.1 ,             4.1, Accessories,  270000.0
+    1186, 2025-07-05, Kano  , Grace      , Keyboard  ,      1.0,   150000.0,     0.2 ,             3.7, Accessories,  120000.0
+    1187, 2025-07-06, Oyo   , John       , Headphones,      5.0,    35000.0,     0.15,             3.4, Accessories,  148750.0
+    1188, 2025-07-07, Lagos , Daniel     , Mouse     ,      9.0,    75000.0,     0.1 ,             3.4, Accessories,  607500.0
+    1189, 2025-07-08, Rivers, Daniel     , Smartphone,      6.0,   250000.0,     0.05,             3.5, Phones     , 1425000.0
+    1190, 2025-07-09, Enugu , Chinedu    , Smartphone,      1.0,   150000.0,     0.05,             4.3, Phones     ,  142500.0
+    1191, 2025-07-10, Rivers, Femi       , Keyboard  ,      1.0,   400000.0,     0.1 ,             4.0, Accessories,  360000.0
+    1192, 2025-07-11, Lagos , Grace      , Headphones,      2.0,    35000.0,     0.15,             3.6, Accessories,   59500.0
+    1193, 2025-07-12, Enugu , Ada        , Monitor   ,      9.0,   100000.0,     0.05,             2.7, Computers  ,  855000.0
+    1194, 2025-07-13, Oyo   , Esther     , Smartphone,      3.0,    35000.0,     0.2 ,             2.7, Phones     ,   84000.0
+    1195, 2025-07-14, Lagos , Ife        , Monitor   ,      1.0,   150000.0,     0.05,             2.5, Computers  ,  142500.0
+    1196, 2025-07-15, Rivers, John       , Mouse     ,      5.0,    50000.0,     0.0 ,             4.9, Accessories,  250000.0
+    1197, 2025-07-16, Abuja , Ada        , Smartphone,      7.0,   400000.0,     0.0 ,             2.5, Phones     , 2800000.0
+    1198, 2025-07-17, Kano  , Femi       , Smartphone,      6.0,    50000.0,     0.15,             2.8, Phones     ,  255000.0
+    1199, 2025-07-18, Rivers, Esther     , Tablet    ,      1.0,   250000.0,     0.1 ,             3.3, Phones     ,  225000.0
+    1200, 2025-07-19, Enugu , Femi       , Smartphone,      5.0,    50000.0,     0.15,             4.5, Phones     ,  212500.0

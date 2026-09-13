@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Upload Dataset | Data Guardian AI</title>
+
+
+    <link
+        rel="stylesheet"
+        href="../css/sidebar.css">
+
+
+    <link
+        rel="stylesheet"
+        href="../css/upload.css">
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="app-container">
+
+    <!-- =========================
+         SIDEBAR
+    ========================== -->
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+            </div>
+
+            <span class="brand-text">
+                Data Guardian AI
+            </span>
+
+        </div>
+
+
+        <button
+            type="button"
+            class="toggle-btn"
+            id="sidebarToggle"
+            aria-label="Toggle sidebar">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <p class="nav-title">
+            MAIN
+        </p>
+
+
+        <a
+            href="dashboard.html"
+            class="nav-item">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+        <a
+            href="upload.html"
+            class="nav-item active">
+
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+            <span>
+                Upload Dataset
+            </span>
+
+        </a>
+
+
+        <a
+            href="analysis.html"
+            class="nav-item">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>
+                Analysis
+            </span>
+
+        </a>
+
+
+        <p class="nav-title">
+            MANAGEMENT
+        </p>
+
+
+        <a
+            href="reports.html"
+            class="nav-item">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <span>
+                Reports
+            </span>
+
+        </a>
+
+
+        <a
+            href="chat.html"
+            class="nav-item">
+
+            <i class="fa-solid fa-comments"></i>
+
+            <span>
+                AI Chat
+            </span>
+
+        </a>
+
+
+        <a
+            href="history.html"
+            class="nav-item">
+
+            <i class="fa-solid fa-clock-rotate-left"></i>
+
+            <span>
+                History
+            </span>
+
+        </a>
+
+
+        <p class="nav-title">
+            SYSTEM
+        </p>
+
+
+        <a
+            href="settings.html"
+            class="nav-item">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>
+                Settings
+            </span>
+
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <a
+            href="index.html"
+            class="nav-item logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>
+                Logout
+            </span>
+
+        </a>
+
+    </div>
+
+</aside>
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="main-content">
+
+        <header class="page-header">
+
+            <div>
+
+                <p class="eyebrow">
+                    DATA QUALITY
+                </p>
+
+                <h1>
+                    Upload Dataset
+                </h1>
+
+                <p class="subtitle">
+                    Upload your dataset and let Data Guardian AI
+                    analyze its quality, risks and business impact.
+                </p>
+
+            </div>
+
+        </header>
+
+
+        <!-- =========================
+             UPLOAD CARD
+        ========================== -->
+
+        <section class="upload-card">
+
+            <div class="upload-header">
+
+                <div class="upload-icon">
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>
+                        Upload your dataset
+                    </h2>
+
+                    <p>
+                        Supported formats: CSV, XLSX and XLS
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORM -->
+
+            <form id="uploadForm">
+
+
+                <!-- FILE DROP AREA -->
+
+                <label for="dataset" class="drop-zone" id="dropZone">
+
+                    <div class="drop-icon">
+
+                        <i class="fa-solid fa-file-arrow-up"></i>
+
+                    </div>
+
+                    <h3>
+                        Drop your dataset here
+                    </h3>
+
+                    <p>
+                        or click to browse your computer
+                    </p>
+
+                    <span class="file-types">
+                        CSV • XLSX • XLS
+                    </span>
+
+                    <input
+                        type="file"
+                        id="dataset"
+                        name="dataset"
+                        accept=".csv,.xlsx,.xls"
+                        hidden
+                    >
+
+                </label>
+
+
+                <!-- FILE INFORMATION -->
+
+                <div id="fileInfo" class="file-info">
+
+                    <i class="fa-solid fa-file"></i>
+
+                    <span id="fileName">
+                        No file selected
+                    </span>
+
+                </div>
+
+
+                <!-- PROMPT -->
+
+                <div class="form-group">
+
+                    <label for="prompt">
+
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        Analysis Prompt
+
+                    </label>
+
+                    <textarea
+                        id="prompt"
+                        name="prompt"
+                        rows="5"
+                        placeholder="Example: Analyse this dataset and generate an executive report."
+                    >Analyse this dataset and generate an executive report.</textarea>
+
+                    <small>
+                        Tell Data Guardian AI what you want to discover.
+                    </small>
+
+                </div>
+
+
+                <!-- ANALYZE BUTTON -->
+
+                <button
+                    type="submit"
+                    class="analyze-btn"
+                    id="analyzeBtn"
+                >
+
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+                    Analyze Dataset
+
+                </button>
+
+
+                <!-- LOADING -->
+
+                <div id="loading" class="loading">
+
+                    <div class="spinner"></div>
+
+                    <p>
+                        Data Guardian AI is analyzing your dataset...
+                    </p>
+
+                    <span>
+                        Profiling • Validation • Outliers • AI Insights
+                    </span>
+
+                </div>
+
+
+                <!-- RESULT -->
+
+                <div id="result" class="result"></div>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             INFORMATION CARDS
+        ========================== -->
+
+        <section class="info-grid">
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-database"></i>
+
+                <h3>
+                    Dataset Profiling
+                </h3>
+
+                <p>
+                    Understand rows, columns, data types and
+                    dataset structure.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-shield-halved"></i>
+
+                <h3>
+                    Data Validation
+                </h3>
+
+                <p>
+                    Detect missing values, duplicates and
+                    empty columns.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <i class="fa-solid fa-robot"></i>
+
+                <h3>
+                    AI Insights
+                </h3>
+
+                <p>
+                    Get recommendations and understand the
+                    business impact of data problems.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="../Javascript/upload.js"></script>
+<script src="../Javascript/sidebar.js"></script>
+</body>
+
+</html>

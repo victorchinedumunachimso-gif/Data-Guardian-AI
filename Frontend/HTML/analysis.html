@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Analysis | Data Guardian AI</title>
+
+
+    <!-- Master Sidebar -->
+
+    <link
+        rel="stylesheet"
+        href="../css/sidebar.css">
+
+
+    <!-- Analysis Page -->
+
+    <link
+        rel="stylesheet"
+        href="../css/analysis.css">
+
+
+    <!-- Font Awesome -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+<aside class="sidebar" id="sidebar">
+
+    <div class="sidebar-header">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <span class="brand-text">
+                Data Guardian AI
+            </span>
+
+        </div>
+
+        <button
+            type="button"
+            class="toggle-btn"
+            id="sidebarToggle"
+            aria-label="Toggle sidebar">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </button>
+
+    </div>
+
+
+    <nav class="sidebar-nav">
+
+        <p class="nav-title">
+            MAIN
+        </p>
+
+        <a href="dashboard.html" class="nav-item">
+
+            <i class="fa-solid fa-house"></i>
+
+            <span>
+                Dashboard
+            </span>
+
+        </a>
+
+
+        <a href="upload.html" class="nav-item">
+
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+
+            <span>
+                Upload Dataset
+            </span>
+
+        </a>
+
+
+        <a href="analysis.html" class="nav-item active">
+
+            <i class="fa-solid fa-chart-column"></i>
+
+            <span>
+                Analysis
+            </span>
+
+        </a>
+
+
+        <p class="nav-title">
+            MANAGEMENT
+        </p>
+
+
+        <a href="reports.html" class="nav-item">
+
+            <i class="fa-solid fa-file-lines"></i>
+
+            <span>
+                Reports
+            </span>
+
+        </a>
+
+
+        <a href="chat.html" class="nav-item">
+
+            <i class="fa-solid fa-comments"></i>
+
+            <span>
+                AI Chat
+            </span>
+
+        </a>
+
+
+        <a href="history.html" class="nav-item">
+
+            <i class="fa-solid fa-clock-rotate-left"></i>
+
+            <span>
+                History
+            </span>
+
+        </a>
+
+
+        <p class="nav-title">
+            SYSTEM
+        </p>
+
+
+        <a href="settings.html" class="nav-item">
+
+            <i class="fa-solid fa-gear"></i>
+
+            <span>
+                Settings
+            </span>
+
+        </a>
+
+    </nav>
+
+
+    <div class="sidebar-bottom">
+
+        <a href="index.html" class="nav-item logout">
+
+            <i class="fa-solid fa-right-from-bracket"></i>
+
+            <span>
+                Logout
+            </span>
+
+        </a>
+
+    </div>
+
+</aside>
+
+
+    <!-- =====================================
+         MAIN
+    ====================================== -->
+
+    <main class="main">
+
+        <!-- Top bar -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h1>
+                    Dataset Analysis
+                </h1>
+
+                <p>
+                    Detailed analysis of your uploaded dataset
+                </p>
+
+            </div>
+
+
+            <a href="upload.html"
+               class="upload-btn">
+
+                <i class="fa-solid fa-plus"></i>
+
+                New Analysis
+
+            </a>
+
+        </header>
+
+
+        <!-- =====================================
+             OVERVIEW
+        ====================================== -->
+
+        <section class="overview-grid">
+
+            <div class="stat-card">
+
+                <div class="stat-icon blue">
+
+                    <i class="fa-solid fa-database"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Dataset Rows</span>
+
+                    <strong id="analysisRows">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon purple">
+
+                    <i class="fa-solid fa-table-columns"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Columns</span>
+
+                    <strong id="analysisColumns">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon orange">
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Issues</span>
+
+                    <strong id="analysisIssues">
+                        --
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="stat-card">
+
+                <div class="stat-icon green">
+
+                    <i class="fa-solid fa-circle-check"></i>
+
+                </div>
+
+                <div>
+
+                    <span>Quality Score</span>
+
+                    <strong id="analysisScore">
+                        --%
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             QUALITY + VALIDATION
+        ====================================== -->
+
+        <section class="analysis-grid">
+
+            <!-- Quality -->
+
+            <div class="analysis-panel">
+
+                <div class="panel-title">
+
+                    <div>
+
+                        <h2>
+                            Data Quality
+                        </h2>
+
+                        <p>
+                            Overall health of your dataset
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="big-quality">
+
+                    <div
+                        class="quality-circle"
+                        id="analysisQualityCircle">
+
+                        <div>
+
+                            <strong id="qualityNumber">
+                                0%
+                            </strong>
+
+                            <span>
+                                Quality
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="quality-details">
+
+                        <h3 id="qualityGrade">
+                            Waiting for analysis
+                        </h3>
+
+                        <p id="qualityMessage">
+                            Upload a dataset to begin analysis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Validation -->
+
+            <div class="analysis-panel">
+
+                <div class="panel-title">
+
+                    <div>
+
+                        <h2>
+                            Validation
+                        </h2>
+
+                        <p>
+                            Detected data-quality problems
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="validation-list">
+
+                    <div class="validation-item">
+
+                        <span>
+                            Missing Values
+                        </span>
+
+                        <strong id="missingCount">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="validation-item">
+
+                        <span>
+                            Duplicate Rows
+                        </span>
+
+                        <strong id="duplicateCount">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="validation-item">
+
+                        <span>
+                            Empty Columns
+                        </span>
+
+                        <strong id="emptyCount">
+                            0
+                        </strong>
+
+                    </div>
+
+
+                    <div class="validation-item">
+
+                        <span>
+                            Outliers
+                        </span>
+
+                        <strong id="outlierCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             AI INSIGHTS
+        ====================================== -->
+
+        <section class="analysis-panel">
+
+            <div class="panel-title">
+
+                <div>
+
+                    <h2>
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        AI Insights
+                    </h2>
+
+                    <p>
+                        Recommendations generated from your dataset
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div
+                id="analysisInsights"
+                class="insights-grid">
+
+                <div class="empty-state">
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    <p>
+                        No analysis available yet.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             DATA QUALITY DETAILS
+        ====================================== -->
+
+        <section class="analysis-panel">
+
+            <div class="panel-title">
+
+                <div>
+
+                    <h2>
+                        Data Quality Details
+                    </h2>
+
+                    <p>
+                        Detailed validation results
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="quality-table">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Issue</th>
+
+                            <th>Count</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="qualityTable">
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+        <!-- =====================================
+     ML VISUALIZATIONS
+====================================== -->
+
+<section class="visualization-section">
+
+    <div class="visualization-header">
+
+        <div>
+
+            <span class="visualization-eyebrow">
+                MACHINE LEARNING
+            </span>
+
+            <h2>
+                Intelligent Data Visualizations
+            </h2>
+
+            <p>
+                Data Guardian AI automatically selected these
+                visualizations from your dataset.
+            </p>
+
+        </div>
+
+        <div class="visualization-status">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <span id="visualizationCount">
+                0 charts
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         VISUALIZATION GRID
+    ====================================== -->
+
+    <div
+        id="visualizationContainer"
+        class="visualization-grid">
+
+        <div class="visualization-empty">
+
+            <div class="visualization-empty-icon">
+
+                <i class="fa-solid fa-chart-simple"></i>
+
+            </div>
+
+            <h3>
+                No visualizations yet
+            </h3>
+
+            <p>
+                Upload and analyze a dataset to generate
+                intelligent visualizations.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================
+         ML ANALYTICS INSIGHTS
+    ====================================== -->
+
+    <div class="ml-insights-panel">
+
+        <div class="panel-title">
+
+            <div>
+
+                <h2>
+                    <i class="fa-solid fa-brain"></i>
+                    Machine Learning Insights
+                </h2>
+
+                <p>
+                    Patterns discovered by the ML analytics engine.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div
+            id="mlInsightsContainer"
+            class="ml-insights-grid">
+
+            <div class="ml-insight-card">
+
+                <span>
+                    CORRELATIONS
+                </span>
+
+                <strong id="mlCorrelationStatus">
+                    Waiting...
+                </strong>
+
+            </div>
+
+
+            <div class="ml-insight-card">
+
+                <span>
+                    ANOMALIES
+                </span>
+
+                <strong id="mlAnomalyCount">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="ml-insight-card">
+
+                <span>
+                    CLUSTERS
+                </span>
+
+                <strong id="mlClusterCount">
+                    0
+                </strong>
+
+            </div>
+
+
+            <div class="ml-insight-card">
+
+                <span>
+                    PCA
+                </span>
+
+                <strong id="mlPCAStatus">
+                    Waiting...
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+</div>
+
+
+<script src="../Javascript/analysis.js"></script>
+
+<script src="../Javascript/sidebar.js"></script>
+
+</body>
+
+</html>

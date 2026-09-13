@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Reports | Data Guardian AI</title>
+
+    <!-- MASTER SIDEBAR -->
+    <link
+        rel="stylesheet"
+        href="../css/sidebar.css">
+
+    <!-- REPORTS CSS -->
+    <link
+        rel="stylesheet"
+        href="../css/reports.css">
+
+    <!-- FONT AWESOME -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+<div class="app">
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside
+        class="sidebar"
+        id="sidebar">
+
+
+        <div class="sidebar-header">
+
+
+            <div class="brand">
+
+                <div class="brand-icon">
+
+                    <i class="fa-solid fa-shield-halved"></i>
+
+                </div>
+
+                <span class="brand-text">
+                    Data Guardian AI
+                </span>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="toggle-btn"
+                id="sidebarToggle"
+                aria-label="Toggle sidebar">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <p class="nav-title">
+                MAIN
+            </p>
+
+
+            <a
+                href="dashboard.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <a
+                href="upload.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                <span>
+                    Upload Dataset
+                </span>
+
+            </a>
+
+
+            <a
+                href="analysis.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-chart-column"></i>
+
+                <span>
+                    Analysis
+                </span>
+
+            </a>
+
+
+            <p class="nav-title">
+                MANAGEMENT
+            </p>
+
+
+            <a
+                href="reports.html"
+                class="nav-item active">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+                <span>
+                    Reports
+                </span>
+
+            </a>
+
+
+            <a
+                href="chat.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-comments"></i>
+
+                <span>
+                    AI Chat
+                </span>
+
+            </a>
+
+
+            <a
+                href="history.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                <span>
+                    History
+                </span>
+
+            </a>
+
+
+            <p class="nav-title">
+                SYSTEM
+            </p>
+
+
+            <a
+                href="settings.html"
+                class="nav-item">
+
+                <i class="fa-solid fa-gear"></i>
+
+                <span>
+                    Settings
+                </span>
+
+            </a>
+
+        </nav>
+
+
+        <!-- LOGOUT -->
+
+        <div class="sidebar-bottom">
+
+            <a
+                href="index.html"
+                class="nav-item logout">
+
+                <i class="fa-solid fa-right-from-bracket"></i>
+
+                <span>
+                    Logout
+                </span>
+
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- =====================================
+         MAIN
+    ====================================== -->
+
+    <main class="main-content">
+
+
+        <!-- HEADER -->
+
+        <header class="reports-header">
+
+            <div>
+
+                <span class="eyebrow">
+                    EXECUTIVE INTELLIGENCE
+                </span>
+
+                <h1>
+                    Executive Report
+                </h1>
+
+                <p>
+                    A complete summary of your dataset quality,
+                    risks and recommendations.
+                </p>
+
+            </div>
+
+
+            <button
+                id="downloadReport"
+                class="download-btn"
+                type="button">
+
+                <i class="fa-solid fa-download"></i>
+
+                Download PDF
+
+            </button>
+
+        </header>
+
+
+        <!-- =====================================
+             REPORT META
+        ====================================== -->
+
+        <section class="report-meta">
+
+            <div>
+
+                <span>
+                    Report
+                </span>
+
+                <strong id="reportTitle">
+                    Data Guardian AI Executive Report
+                </strong>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Generated
+                </span>
+
+                <strong id="generatedAt">
+                    --
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             QUALITY OVERVIEW
+        ====================================== -->
+
+        <section class="quality-overview">
+
+
+            <div class="quality-score-card">
+
+                <span>
+                    Overall Quality
+                </span>
+
+
+                <div class="score-display">
+
+                    <strong id="qualityScore">
+                        0%
+                    </strong>
+
+                    <span id="qualityGrade">
+                        Unknown
+                    </span>
+
+                </div>
+
+
+                <div class="quality-progress">
+
+                    <div
+                        id="qualityProgress"
+                        class="quality-progress-bar">
+                    </div>
+
+                </div>
+
+
+                <p id="qualitySummary">
+                    Waiting for report...
+                </p>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-icon blue">
+
+                    <i class="fa-solid fa-database"></i>
+
+                </div>
+
+                <span>
+                    Dataset Rows
+                </span>
+
+                <strong id="reportRows">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-icon purple">
+
+                    <i class="fa-solid fa-table-columns"></i>
+
+                </div>
+
+                <span>
+                    Columns
+                </span>
+
+                <strong id="reportColumns">
+                    --
+                </strong>
+
+            </div>
+
+
+            <div class="metric-card">
+
+                <div class="metric-icon red">
+
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+
+                </div>
+
+                <span>
+                    Outliers
+                </span>
+
+                <strong id="reportOutliers">
+                    --
+                </strong>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =====================================
+             DATASET PROFILE
+        ====================================== -->
+
+        <section class="report-panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Dataset Profile
+                    </h2>
+
+                    <p>
+                        Overview of the analyzed dataset.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-table panel-icon"></i>
+
+            </div>
+
+
+            <div class="profile-grid">
+
+                <div>
+                    <span>Rows</span>
+                    <strong id="profileRows">--</strong>
+                </div>
+
+                <div>
+                    <span>Columns</span>
+                    <strong id="profileColumns">--</strong>
+                </div>
+
+                <div>
+                    <span>Memory Usage</span>
+                    <strong id="memoryUsage">--</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             VALIDATION
+        ====================================== -->
+
+        <section class="report-panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Validation Findings
+                    </h2>
+
+                    <p>
+                        Data quality issues detected in the dataset.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-shield-halved panel-icon"></i>
+
+            </div>
+
+
+            <div class="validation-grid">
+
+                <div class="finding-card">
+
+                    <span>
+                        Missing Value Columns
+                    </span>
+
+                    <strong id="missingColumns">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="finding-card">
+
+                    <span>
+                        Duplicate Rows
+                    </span>
+
+                    <strong id="duplicateRows">
+                        0
+                    </strong>
+
+                </div>
+
+
+                <div class="finding-card">
+
+                    <span>
+                        Empty Columns
+                    </span>
+
+                    <strong id="emptyColumns">
+                        0
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             OUTLIERS
+        ====================================== -->
+
+        <section class="report-panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Outlier Analysis
+                    </h2>
+
+                    <p>
+                        Extreme values identified by the analysis engine.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-chart-line panel-icon"></i>
+
+            </div>
+
+
+            <div
+                id="outlierDetails"
+                class="table-container">
+
+                <p class="empty-state">
+                    No report data available.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             BUSINESS IMPACT
+        ====================================== -->
+
+        <section class="report-panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Business Impact
+                    </h2>
+
+                    <p>
+                        Potential business risks created by
+                        detected data-quality issues.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-briefcase panel-icon"></i>
+
+            </div>
+
+
+            <div
+                id="businessImpact"
+                class="business-grid">
+
+                <p class="empty-state">
+                    No business impact data available.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             AI INSIGHTS
+        ====================================== -->
+
+        <section class="report-panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        AI Recommendations
+                    </h2>
+
+                    <p>
+                        Recommendations generated from the analysis.
+                    </p>
+
+                </div>
+
+                <i class="fa-solid fa-wand-magic-sparkles panel-icon"></i>
+
+            </div>
+
+
+            <div
+                id="aiRecommendations"
+                class="recommendation-grid">
+
+                <p class="empty-state">
+                    No recommendations available.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             EXECUTIVE SUMMARY
+        ====================================== -->
+
+        <section class="executive-summary">
+
+            <div class="summary-icon">
+
+                <i class="fa-solid fa-file-lines"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    EXECUTIVE SUMMARY
+                </span>
+
+                <h2>
+                    Key Conclusion
+                </h2>
+
+                <p id="executiveSummary">
+                    No executive summary available yet.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+<script src="../Javascript/reports.js"></script>
+
+<script src="../Javascript/sidebar.js"></script>
+
+
+</body>
+
+</html>
